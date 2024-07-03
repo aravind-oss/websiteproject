@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+  }
+  /* Header Styles */
+  header {
+    display:flex;
+    flex-wrap:wrap;
+    background:#EDEDED;
+    color:yellow;
+    padding: 1rem 0;
+    position:fixed;
+    min-width:355px;
+    width:100%;
+    z-index:1000;
+    border-radius:1px; 
+   
+  }
+  header .logo {
+    display: inline-block;
+    margin-right: 1rem;
+    text-emphasis: none;
+  }
+  header nav ul {
+    list-style-type: none;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  header nav ul li a {
+    color:#424242;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color:black;
+    text-align: center;
+  }
+  
+  header .social-icons {
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 1rem;
+    border-radius: 50px;
+  }
+  
+  header .social-icons a {
+    margin-left: 0.5rem;
+    border-radius: 30px;
+    padding:3px;
+  }
+  /* body details */
+  body {
+    width:100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.6;
+    background: rgb(66,66,66);
+    color:yellow ;
+  }
+  /* Main Content Styles */
+  main {
+    padding-top:70px;
+    min-width:355px;
+  }
+  
+  .page {
+    padding:3rem 0;
+  }
+  
+  .page h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom:1rem;
+    min-width: 300px;
+    color: #F9ED32;
+  }
+  
+  .page p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    scroll-padding-right: 20px;
+    color: #F9ED32;
+    padding: 10px;
+  }
+   /* slider part */
+   .slideshow-container {
+    max-width:80%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+  }
+  .slide {
+    display: none;
+    text-align:center;
+  }
+  .slide img {
+    width:100%;
+    height: auto;
+  }
+   /* Optional: Style navigation controls (next/prev buttons) */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 10px;
+    color:white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .slideshow-container{
+    width:800px;
+  }
+  /* image changing color */
+  #bikecolors{
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    margin: 0 auto 0 auto;
+    min-width:350px;
+    width: 400px;
+    height: fit-content;
+    border: solid white .5px;
+  }
+  
+  #bikecolors::-webkit-scrollbar {
+    display: none; 
+    -webkit-overflow-scrolling: touch; 
+  }
+  
+  .coloropion {
+    min-width:300px;
+    min-height:200px;
+    margin: 15px;
+    font-size: 5em;
+    background-color:rgb(66,66,66);
+    border-radius: 7px;
+    text-align: center;
+    justify-content: center;
+  }
+  #bikecolors{
+    width:330px;
+    height:330px;
+  } 
+  /* table */
+  .table{
+    color: #F9ED32;
+    text-align: center;
+
+  }
+  .prebooking{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    border-color: yellow;
+    border-radius:50%;
+    border-width:5px;
+    
+  }
+  .bookingform{
+    min-width:350px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #F9ED32;
+  }
+  .username{
+    padding-bottom: 10px;
+  }
+  .usermail{
+     padding-bottom: 10px;
+  }
+  .usernumber{
+    padding-bottom: 10px;
+    padding-right: 63px;
+  }
+  .userbike{
+    padding-bottom: 10px;
+    padding-right: 100px;
+  }
+  .useradhaarnumber{
+     padding: 10px;
+     padding-right: 70px;
+  }
+  .userpincode{
+    padding-right: 7px;
+  }
+  .useraddress{
+    padding-right: 24px;
+    box-sizing: border-box;
+  }
+  .submitbnt{
+    width: 100px;
+    background-color:yellow;
+    height: 50px;
+    border: solid white 1px;
+    border-radius: 50px;
+  }
+  
+  /* buuton part */
+  .button {
+    display:inline-block;
+    background-color: #F9ED32;
+    color: #252525;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  
+  }
+  .color-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: #FFF225;
+  
+  }
+  .carousel{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+  }
+  .carousel h2{
+    color: #F9ED32;
+  }
+  .carousel p{
+    color:#F9ED32;
+  }
+  .carousel{
+    background-color: #EDEDED;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .carousel-item1{
+    background-color: #EDEDED;
+    display: flex;
+    flex-wrap: wrap;
+    padding:30px;
+    scroll-padding-right:50px;
+    animation-play-state:running;
+    font-size:25px;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1);
+  }
+  .carousel-item1 p{
+    padding: 20px;
+  }
+  .imagtag{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+  }
+  .carousel-item2{
+    background-color:#EDEDED;
+    color: black;
+    padding-right:50%;
+    padding:50px;
+    scroll-padding-right:50px;
+    animation-play-state:running;
+    font-size: 25px;
+  }
+  .carousel-item3{
+    background-color:#373737;
+    padding-right:50%;
+    padding:50px;
+    scroll-padding-right:50px;
+    animation-play-state:running;
+    font-size: 25px;
+  }
+  .carousel-item4{
+    background-color:#EDEDED;
+    font-display: black;
+    padding-right:50%;
+    padding:50px;
+    scroll-padding-right:50px;
+    animation-play-state: running;
+    font-size:larger;
+    font-size: 25px;
+  }
+  .carousel-item5{
+    background-color:#424242;
+    text-emphasis: none;
+    padding-right:50%;
+    padding:50px;
+    scroll-padding-right:50px;
+    animation-play-state: running;
+    font-size: larger;
+    font-size: 25px;
+  }
+  .vehicle-image{
+    filter:drop-shadow(25px);
+    transform: matrix3d(23px);
+  }
+  .table{
+    text-align: center;
+    display:grid;
+    -ms-layout-grid: 10px;
+    padding: 20px;
+  }
+  tr:nth-child(odd){
+    background-color:black;
+  
+  }
+  tr:nth-child(even){
+    background-color:rgb(66,66,66);
+  }
+  .ESO3Table{
+    text-align: center;
+    display:grid;
+    -ms-layout-grid:20px;
+  }
+  .ESO32Table{
+    text-align: center;
+    display: grid;
+    -ms-layout-grid: 20px;
+  }
+  .ESO3MaxTable{
+    text-align: center;
+    display: grid;
+    -ms-layout-grid: 20px;
+  }
+  .rental{
+    display: grid;
+    padding: 100px;
+    font-size: 40px;
+    margin: 10px;
+  }
+   /* conatact page */
+  .con{
+    margin:0px;
+    font-size: larger;
+    display:grid;
+    text-align: center;
+    padding:10px;
+  }
+  .contact{
+    margin:10px;
+    text-align:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:50px;
+  }
+  .contactways{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content:left;
+    text-align:left;
+  }
+  .location{
+    padding:10px; 
+    display:inline-block;
+    justify-content:center;
+  }
+  /* Footer Styles */
+  footer {
+    display:flex;
+    flex-wrap: wrap;
+    background-color: #131313;
+    color: #EDEDED;
+    padding:2rem 0;
+    margin-top:3rem;
+  }
+  
+  footer ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  footer ul li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  footer ul li a {
+    color: #EDEDED;
+    text-decoration:none;
+    transition: color 0.3s ease;
+  }
+  footer ul li a:hover {
+    color: #F9ED32;
+  }
+  /* Dropdown Menu Styles */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#EDEDED;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* Other Custom Styles */
+  .vehicle-image {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .color-buttons {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .color-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .text-details {
+    margin-bottom: 2rem;
+  }
+  
+  /* Animation Classes (using Animate.css) */
+  .animate__animated {
+    animation-duration: 1s;
+  }
+  
+  .animate__bounceInLeft {
+    animation-name: bounceInLeft;
+  }
+  
+  .animate__pulse {
+    animation-name: pulse;
+  
+  .animate__infinite {
+    animation-iteration-count: infinite;
+  }
+  }
+  /* practise mode */
+ 

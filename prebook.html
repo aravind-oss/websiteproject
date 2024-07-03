@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-book Rhyno EV Products</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="icon" href="Black logo for B&W print.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!-- Header -->
+    <header>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <img src="Black logo for B&W print.png" width="100px" height="50px"  alt="Rhyno EV Logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown">
+              <a href="#">Products</a>
+              <ul class="dropdown-content">
+                <li><a href="product1.html">SE03 Lite</a></li>
+                <li><a href="product2.html">SE03</a></li>
+                <li><a href="product3.html">SE03 Max</a></li>
+                <li><a href="compare.html">Compare All</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="prebook.html">Pre-book Now</a></li>
+          </ul>
+        </nav>
+        <div class="social-icons">
+          <a  href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </header>
+     <!-- Main Content -->
+   <main>
+     <!-- Pre-book Page Content -->
+     <section id="prebook" class="page">
+       <div class="container">
+         <h2> <br>Pre-book Your Rhyno EV</h1>
+         <p>Secure your spot to be among  <br>the first to experience...</p>
+         <!-- Pre-book form or other content -->
+       </div>
+     </section>
+   </main>
+    <form class="prebooking" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="322d9809-4908-416c-98a1-9dd3d8d3e7cf">
+      <div class="bookingform"><h2>custmor details</h2> <br>
+        <div class="username">
+           <label for="name">Name:</label>
+           <input type="text" id="name"name="visitor_name" placeholder="aravind kumar"pattern =[A-Z/a-z]{3,30} required>
+        </div>
+        <div class="usermail">
+            <label for="name">E-mail:</label>
+            <input type="email" id="email" name="visitor_email" placeholder="aravind09@gmail.com" required>
+        </div>
+        <div class="usernumber">
+            <label for="name">Mobile Number:</label>
+            <input type="number" id="number"name="visitor_number" placeholder="4456114562" required>
+        </div>
+        <div class="userbike">
+            <label for="name">Choose  Bike:</label>
+            <input type="radio" value="SE03 Lite"name="Choose your bike" text-algin="center">  SE03 Lite  <br>
+            <input type="radio" value="SE03"name="Choose your bike" class="userbike2" >   SE03 
+            <input type="radio" value="SE03 Max"name="Choose your bike" class="userbike3">  SE03 Max 
+        </div>
+        <div class="useradhaarnumber">
+           <label for="name">Adhaar Number:</label>
+           <input type="number" name="visitor_adhaar_number" id="number" placeholder="4456 1111 1112 3087" required> <br>
+        </div>
+        <div class="usergender">
+          <span>Gender :</span> 
+          <input type="radio" name="gen" value="male">male<input type="radio" name="gen" value="women"> women <input type="radio" name="gen" value="other">other
+        </div> <br>
+        <div class="usernationality">
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="India">India</option>
+            <option value="Paskistan">Paskistan</option>
+            <option value="Japan">Japan</option>
+            <option value="Adhaar">Afganistan</option>
+            <option value="Nepal">Nepal</option>
+            <option value="West indias">West indias</option>
+            <option value="Australia">Australia</option>
+          </select>
+        </div> <br>
+        <div class="userstate">
+          <label for="country">State :</label>
+          <select id="State" name="State">
+            <option value= "Andhra pradesh">Andhra pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+         </select>
+        </div>
+        <div class="userpincode">
+            <label for="name">Pincode:</label>
+            <input type="number" name="visitor_pincode" id="number" placeholder="567439" required>
+        </div> <br>
+        <div class="useraddress">
+            <label for="name"> <img src="https://i.ibb.co/rszzJjR/Screenshot-2024-06-24-191713.png" alt="Screenshot-2024-06-24-191713" border="0" width="12px" > Address:</label>
+            <textarea id="message" name="address" rows="5" cols="25" required></textarea><br>
+        </div> <br>
+        <div class="userpaymentmode">
+          <h1>Payment Details</h1>
+          <div class="inputbox">
+              <span>Cards accepted :</span>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="mastercard" style="height: 20px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/RuPay.svg" alt="rupay" style="height: 20px;">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/640px-Visa_Inc._logo.svg.png" alt="visa"    style="height: 16px;">
+          </div>
+           <div class="usercardno">
+              <span>Card no :</span>
+              <input type="number" placeholder="0000-0000-0000"> <br>
+           </div> <br>
+           <div class="userexpirydate">
+              <span>expiry date :</span>
+              <input type="date" placeholder="DD-MM-YY" required> <br>
+           </div>  <br>
+           <div class="usercvv">
+              <span>   cvv :</span>
+              <input type="number" placeholder="cvv " required>
+           </div> <br>
+           <div class="userbankname">
+              <span>Bank Name :</span>
+              <input type="text" placeholder="stae bank of india" required> 
+           </div> <br>
+        </div> <br>
+           <input type="hidden" name="redirect" value="https://web3forms.com/success">
+        <div>
+          <button class="submitbnt" type="submit">submit</button>
+        </div>
+      </div>
+    </form>
+     <!-- Footer -->
+     <footer>
+      <div class="container">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Website Policy</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="https://www.linkedin.com/company/teachnook/?originalSubdomain=in">Career</a></li>
+          <li><a href="Rentals.html">Rentals</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Scripts -->
+   <script src="server.js"></script>
+</body>
+</html>
